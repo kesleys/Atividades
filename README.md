@@ -3,4 +3,4 @@ Repositório para armazenamento de atividades, exercícios e provas realizadas p
 
 ## Tipos de arquivos armazenados:
 * Algoritmos e códigos;
-** Designados por Terminação "code".
+  Designados por Terminação "code".
