@@ -5,3 +5,5 @@ Repositório para armazenamento de atividades, exercícios e provas realizadas p
 * Algoritmos e códigos - Designados por Terminação "code".
 * Documentações - Designados por Terminação "doc".
 * Projetos Completos - Designados por Terminação "project".
+
+disciplinas |Introdução a Programação|
