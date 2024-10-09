@@ -1,0 +1,155 @@
+Uma empresa que vende produtos deseja obter informações sobre as vendas realizadas em algum mês. Nesta empresa cada venda é feita por um vendedor. Cada vendedor tem um código de identificação que é associado a venda realizada, sendo que este código varia de 1 a N, onde N é o número de vendedores que trabalham na empresa. Cada venda é identificada por um número de nota fiscal único dentro do mês, variando de 1 a 9999. No final do mês cada venda realizada na empresa deve ser registrada com os seguintes dados:
+
+O número da nota fiscal que identifica a venda e que não pode se repetir em mais de uma venda no mesmo mês
+O código do vendedor que realizou a venda
+O dia do mês em que a venda foi feita
+O valor da venda.
+O usuário que for fazer a digitação das vendas deve ser instruído para que digite o número de nota fiscal igual a zero quando não houver mais vendas a informar.
+
+Antes de iniciar a digitação das vendas, o usuário deve informar inicialmente o mês para o qual ele deseja registrar as vendas e o número de vendedores que trabalharam neste mês.
+
+     Escreva um programa na linguagem C para:
+
+Exibir para cada código do vendedor o valor total que ele vendeu por dia, o valor médio das vendas e a comissão a que este vendedor tem direito
+Exibir o número total de vendas por dia, o valor total vendido por dia e o valor médio das vendas por dia
+Exibir o número total de vendas no mês, o valor total vendido no mês e o valor total de comissões pagas
+Para calcular a comissão do vendedor no mês, considere as seguintes regras de negócio:
+
+·    Se o valor total vendido pelo vendedor no mês for menor ou igual a dois mil reais ele tem direito a uma comissão de 5% deste total.
+
+·    Se o valor total vendido pelo vendedor no mês for maior do que dois mil reais e menor do que cinco mil reais ele tem direito a uma comissão de 7% deste total.
+
+·    Se o valor total vendido pelo vendedor no mês for maior ou igual a cinco mil reais ele tem direito a uma comissão de 10% deste total.
+
+ Considerações sobre as entradas e saídas e respectivas formatações:
+
+O mês das vendas deve ser um valor inteiro maior ou igual a 1 e menor ou igual a 12.
+O número de vendedores deve ser um valor inteiro maior ou igual a 1
+O código do vendedor deve ser valor inteiro maior ou igual a 1 e menor ou igual a 10
+O número da nota fiscal associada a cada venda deve ser valor inteiro maior ou igual a 1 e menor ou igual a 9999 e não pode ser repetido em mais de uma venda no mês.
+O dia da venda deve ser valor inteiro maior ou igual a 1 e menor ou igual a 31 para os meses 1, 3, 5, 7, 8, 10 e 12
+O dia da venda deve ser valor inteiro maior ou igual a 1 e menor ou igual a 30 para os meses 4, 6, 9 e 11
+O dia da venda deve ser valor inteiro maior ou igual a 1 e menor ou igual a 28 para o mês 2 (para simplificar não precisa tratar ano bissexto)
+O valor da venda deve ser valor real maior do que zero com duas casas decimais
+                
+
+Exemplos de formatação de mensagens para validação dos casos de teste na plataforma GDBOnline
+
+ 
+
+            Exemplo
+
+Entre com o mes em que as vendas foram realizadas: 13
+
+Mes deve ser maior ou igual a 1 e menor ou igual a 12
+
+Entre com o mes em que as vendas foram realizadas: 1
+
+
+
+Entre com o numero de vendedores que trabalharam no mes: 0
+
+Numero de vendedores deve ser maior do que zero
+
+Entre com o numero de vendedores que trabalharam no mes: 3
+
+
+
+Entre com as vendas. Para cada venda realizada no mes informar o numero da nota fiscal que a identifica, o codigo do vendedor responsavel, o dia do mes em que foi feita e o valor da venda em reais. Quando desejar finalizar a entrada de dados digite o numero zero para a nota fiscal.
+
+Venda: 1234 2 15 250.00
+
+Venda: 2999 3 10 3000.00
+
+Venda: 2487 1 10 1000.00
+
+Venda: 3676 3 5 2000.00
+
+Venda: 2487 2 29 500.00
+
+Nota fiscal repetida
+
+Informe novamente os dados da venda
+
+Venda: 2467 2 29 500.00
+
+Venda: 6546 10 32 0.00
+
+Codigo do vendedor invalido
+
+Dia da venda invalido
+
+Valor da venda invalida
+
+Informe novamente os dados da venda
+
+Venda: 6546 1 10 2100.00
+
+Venda: 5467 3 20 500.00
+
+Venda: 1421 2 15 300.00
+
+Venda: 0
+
+ 
+
+RESUMO DE VENDAS POR VENDEDOR
+
+Vendedor 1
+
+dia 10: 3100.00 reais
+
+valor medio vendido por dia: 100.00 reais
+
+valor da comissao (7%): 217.00 reais
+
+
+
+Vendedor 2
+
+dia 15: 550.00 reais
+
+dia 29: 500.00 reais
+
+valor medio vendido por dia: 33.87 reais
+
+valor da comissao (5%): 52.50 reais
+
+
+
+Vendedor 3
+
+dia 5: 2000.00 reais
+
+dia 10: 3000.00 reais
+
+dia 20: 500.00 reais
+
+valor medio vendido por dia: 177.42 reais
+
+valor da comissao (10%): 550.00 reais
+
+ 
+
+RESUMO DE VENDAS POR DIA
+
+Dia 5: 1 venda(s) com valor total de 2000.00 reais
+
+Dia 10: 3 venda(s) com valor total de 6100.00 reais
+
+Dia 15: 2 venda(s) com valor total de 550.00 reais
+
+Dia 20: 1 venda(s) com valor total de 500.00 reais
+
+Dia 29: 1 venda(s) com valor total de 500.00 reais
+
+ 
+
+RESUMO DE VENDAS NO MES
+
+quantidade de vendas: 8
+
+valor total vendido: 9650.00 reais
+
+
+valor total de comissoes pagas: 819.50 reais

@@ -1,0 +1,92 @@
+Em uma máquina de autoatendimento bancário (ATM), um cliente pode realizar saques em dinheiro. Considere que na máquina há cédulas de 2, 5, 10, 20, 50 e 100 reais e que há uma disponibilidade ilimitada de notas de cada um destes valores. Faça um programa em C para receber como entradas o saldo da conta do cliente e o valor desejado do saque e, caso o cliente tenha saldo suficiente e o valor do saque seja possível considerando as cédulas disponíveis, determinar quantas notas de cada valor o cliente deve receber e informar o novo saldo. Para determinar os valores e as quantidades de cédulas que deverão ser entregues ao cliente devem ser consideradas duas possibilidades 1) com número mínimo de notas (dinheiro menos trocado); 2) com número máximo de notas (dinheiro mais trocado);
+
+ 
+
+Considerações sobre as entradas e saídas e respectivas formatações
+
+·         O saldo da conta deve ser valor real com duas casas decimais
+
+·         O valor do saque deve ser valor inteiro maior do que zero
+
+                
+
+Exemplos de formatação de mensagens para validação dos casos de teste na plataforma GDBOnline
+
+ 
+
+            Exemplo 1
+
+
+Entre com o saldo da conta a ser sacada (em reais) 500.20
+
+Entre com o valor do saque (em reais) 537
+
+Saldo insuficiente para valor desejado
+
+Entre com o valor do saque (em reais) 0
+
+Valor do saque invalido
+
+Entre com o valor do saque (em reais) 3
+
+Valor do saque incompativel com notas disponiveis
+
+Entre com o valor do saque (em reais) 130
+
+
+
+RESULTADOS
+
+Valor atualizado do saldo (em reais) 370.20
+
+
+
+Opcao de saque 1 (menor quantidade possivel de cedulas)
+
+Cedulas de 100 reais 1
+
+Cedulas de 20 reais 1
+
+Cedulas de 10 reais 1
+
+
+
+Opcao de saque 2 (maior quantidade possivel de cedulas)
+
+Cedulas de 2 reais 65
+
+ 
+
+Exemplo 2
+
+Entre com o saldo da conta a ser sacada (em reais) 500.00
+
+Entre com o valor do saque (em reais) 137
+
+
+
+RESULTADOS
+
+Valor atualizado do saldo (em reais) 363.00
+
+
+
+Opcao de saque 1 (menor quantidade possivel de cedulas)
+
+Cedulas de 100 reais 1
+
+Cedulas de 20 reais 1
+
+Cedulas de 10 reais 1
+
+Cedulas de 5 reais 1
+
+Cedulas de 2 reais 1
+
+
+
+Opcao de saque 2 (maior quantidade possivel de cedulas)
+
+Cedulas de 2 reais 66
+
+Cedulas de 5 reais 1
