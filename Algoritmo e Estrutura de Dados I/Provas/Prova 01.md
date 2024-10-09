@@ -77,4 +77,3 @@ Lote 4: `5`
 
 **Fornos que produziram lote(s) com maior grau de pureza (grau 10):** `2`
 **Fornos que produziram lote(s) com menor grau de pureza (grau 0):** `2, 4`
-```
